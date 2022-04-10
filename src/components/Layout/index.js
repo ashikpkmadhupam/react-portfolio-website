@@ -3,17 +3,18 @@ import Sidebar from '../Sidebar/'
 import './index.scss'
 
 const Layout = () => {
+
+  const a = '{';
+  const b='}';
   return (
     <div className="App">
       <Sidebar />
       <div className="page">
-        <span className="tags top-tags">&lt;body&gt;</span>
+        <span className="tags top-tags">public static void main(String args[]) {a} </span>
 
         <Outlet />
         <span className="tags bottom-tags">
-          &lt;/body&gt;
-          <br />
-          <span className="bottom-tag-html">&lt;/html&gt;</span>
+        {b}
         </span>
       </div>
     </div>
